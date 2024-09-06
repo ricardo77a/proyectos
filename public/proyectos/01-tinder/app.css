@@ -4,7 +4,7 @@
     --card-height: 650px;
     @media screen and (max-width: 768px){
         --card-width: 90vw;
-        --card-height: 60vh;
+        --card-height: 70vh;
     }
 }
 
