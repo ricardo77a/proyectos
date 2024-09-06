@@ -2,6 +2,10 @@
     --profile-image-size: 150px;
     --card-width: 400px;
     --card-height: 650px;
+    @media screen and (max-width: 768px){
+        --card-width: 90vw;
+        --card-height: 60vh;
+    }
 }
 
 body{
@@ -19,6 +23,9 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 768px){
+            height: 10vh;
+        }
         h1{
             margin: 0;
         }
@@ -27,9 +34,11 @@ body{
         height: 90vh;
         display: flex;
         @media screen and (max-width: 768px){
+            height: 80vh;
             display: grid;
             place-items: center;
             overflow: hidden;
+            padding-inline: 0.5rem;
         }
         .main-section{
             width: 20%;
@@ -255,7 +264,13 @@ body{
         justify-content: center;
         align-items: center;
         @media screen and (max-width: 768px){
-
+            height: 10vh;
+            display: grid;
+            place-items: center;
+            p{
+                text-align: center;
+                margin: 0;
+            }
         }
     }
 }
