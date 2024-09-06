@@ -1,0 +1,37 @@
+---
+const { info } = Astro.props
+---
+
+<div class="hidden sm:block absolute left-4 bottom-4 px-8 py-1 rounded-lg">
+  <h1 class="font-bold mt-4 animate-fade-in-up">
+    <a
+      class="text-xs items-center flex gap-2 hover:scale-110 transition"
+      href="/"
+    >
+      <div class="flex flex-col text-center leading-none">
+        <span
+          class="from-slate-100 via-slate-400 to-slate-500 tracking-tighter text-4xl px-1 bg-clip-text inline-block text-transparent bg-gradient-to-r"
+        >100</span>
+        <span
+          class="text-white/80 tracking-tighter text-slate-800 text-[14px]">proyectos</span
+        >
+      </div>
+
+      <span class="rotate-6">
+        <img
+          src="/profile.png"
+          alt="Ricardo Arredondo"
+          class="bg-amber-400 order-1 object-cover w-[80px] h-full p-1 md:order-2 rotate-3 lg:p-2 aspect-square rounded-2xl"
+          style="object-position: center"
+        />
+      </span>
+    </a>
+  </h1>
+  <h2 class="text-yellow-400 font-semibold animate-fade-in animate-delay-300 mt-2 text-base text-center tracking-tighter">
+    #{info.number} - {info.title}
+  </h2>
+  <a
+    class="text-xs animate-fade-in animate-delay-800 hover:underline text-white/90"
+    href="/">← Volver a los proyectos</a
+  >
+</div>
