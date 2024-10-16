@@ -406,6 +406,7 @@ function obtenerNivel(){
 
 // Inicia la música de fondo
 function iniciarMusica(){
+    musica.volume = 0.05; // Ajusta el volumen de la música
     musica.play(); // Reproduce la música de fondo
 }
 
